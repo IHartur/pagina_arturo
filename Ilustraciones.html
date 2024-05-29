@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Arturo Colín</title>
+    <style>
+        /* Incluir la fuente BealeCharming */
+        @font-face {
+            font-family: 'BealeCharming';
+            src: url('fonts/BealeCharming.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Estilos CSS aquí */
+        body {
+            font-family: 'BealeCharming', Georgia, serif;
+            font-size: 18px; /* Ajuste global del tamaño de fuente */
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #f0f0f0;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            font-size: 20px; /* Aumentado en 2 puntos */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mayor visibilidad */
+        }
+        nav {
+            margin-top: 50px; /* Ajuste de margen superior */
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 20px; /* Aumentado en 2 puntos */
+        }
+        nav a:hover {
+            background-color: #f0f0f0;
+            color: #000;
+        }
+        .content {
+            margin-top: 80px; /* Ajuste para evitar invasión de la barra */
+            text-align: center;
+            padding: 20px;
+        }
+        .content h2 {
+            margin-bottom: 20px;
+            color: #f0f0f0;
+            font-size: 24px; /* Aumentado en 2 puntos */
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .about {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .about img {
+            width: 30%;
+            max-width: 300px;
+            max-height: 480px;
+            border: 10px solid #fff;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        .about-text {
+            width: 50%;
+            text-align: justify;
+            color: #ccc;
+            font-size: 18px; /* Aumentado en 2 puntos */
+        }
+
+        /* Margen superior para el título "Tinta China" */
+        .content h1 {
+            margin-top: 50px; /* Ajusta este valor según sea necesario */
+        }
+
+        /* Media Queries para adaptaciones */
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+            .about-text {
+                width: 90%;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 60px;
+            }
+            nav a {
+                padding: 10px;
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 20px; /* Aumentado en 2 puntos */
+            }
+            .content {
+                margin-top: 100px;
+                padding: 10px;
+                font-size: 18px; /* Aumentado en 2 puntos */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px 0;
+                font-size: 20px; /* Aumentado en 2 puntos */
+            }
+            nav {
+                margin-top: 50px;
+            }
+            nav a {
+                padding: 8px;
+                font-size: 18px; /* Aumentado en 2 puntos */
+            }
+            .content {
+                margin-top: 90px;
+                padding: 10px;
+                font-size: 18px; /* Aumentado en 2 puntos */
+            }
+            .about img {
+                width: 90%;
+            }
+            .about-text {
+                width: 100%;
+                font-size: 18px; /* Aumentado en 2 puntos */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portafolio de Arturo Colín</h1>
+    <nav>
+        <a href="Index.html">INICIO</a>
+        <a href="Sobre_mi.html">SOBRE MÍ</a>
+        <a href="Fotografias.html">FOTOGRAFÍAS</a>
+    </nav>
+</header>
+
+<div class="content">
+    <section id="pagina1">
+        <p>Arturo Colín</p>
+    </section>
+
+    <!-- Título centrado "Tinta China" con margen superior ajustado -->
+    <h1>TINTA CHINA</h1>
+
+    <section id="about" class="about">
+        <img src="Imagen/Vans%20(1).png" alt="Foto de ilustración">
+        <div class="about-text">
+            <h2>VANS (texturas)</h2>
+            <p>En esta ilustración, recreo uno de mis tenis que llevaba puesto un dia, se me ocurrió quitarmelo para representar las texturas del calzado utilizando tinta china.</p>
+        </div>
+    </section>
+
+    <section id="achurado" class="about">
+        <div class="about-text">
+            <h2>Achurado</h2>
+            <p>Basándome en una imagen que ví, realicé esta ilustración utilizando achurado y estilógrafos de calibre 6, 4 y 2 para representarla.</p>
+        </div>
+        <img src="Imagen/Achurado%20(1).png" alt="Ilustración de Achurado">
+    </section>
+
+    <section id="nueva-seccion" class="about">
+        <img src="Imagen/Puntillismo%20(1).png" alt="Puntillismo">
+        <div class="about-text">
+            <h2>Puntillismo</h2>
+            <p>Basándose en una imagen realice esta ilustración utilizando puntillismo y con los estilógrafos calibre 6, 4 y 2 para representar a Horus y Ra.</p>
+        </div>
+    </section>
+
+    <!-- Nuevo título Prismacolor -->
+    <h1>PRISMACOLOR</h1>
+    
+<section id="about" class="about">
+        <img src="Imagen/Ecos%20(2).png" alt="ECOS">
+        <div class="about-text">
+            <h2>ECOS</h2>
+            <p>Realice la portada de este disco de vinilo utilizando prismacolor para capturar los colores que llevaría el estuche previamente diseñado.</p>
+        </div>
+    </section>
+
+    <section id="achurado" class="about">
+        <div class="about-text">
+            <h2>SUZUME</h2>
+            <p>Ilustración que realice representando una película que en su momento no estaba en estreno en cines pero para mi parecer siento que sería una película maravillosa por las ilustraciones que tiene pero mi ilustración cambia un poco a la versión original cambiando el fondo.</p>
+        </div>
+        <img src="Imagen/Suzume%20(1).png" alt="SUZUME">
+    </section>
+
+    <section id="nueva-seccion" class="about">
+        <img src="Imagen/Zorro%20contraste%20(1).png" alt="CONTRASTE">
+        <div class="about-text">
+            <h2>Contraste de color</h2>
+            <p>En esta ilustración quise utilizar una imagen simétrica para comparar los colores que hacen contraste con los de la imagen el cual elegí un zorro y por una mitad aplique los colores fieles al zorro pero en la otra mitad fueron colores fríos para que contrastará.</p>
+        </div>
+    </section>
+
+    <!-- Título centrado "ILUSTRACIONES DIGITALES" -->
+    <div style="text-align: center; margin-top: 50px;">
+        <h1>ILUSTRACIONES DIGITALES</h1>
+    </div>
+        <section id="about" class="about">
+        <img src="Imagen/GODZILLA.png" alt="ilustración">
+        <div class="about-text">
+            <h2>GODZILLA MEXICANO</h2>
+            <p>Esta ilustración es bastante graciosa la cual me gusto mucho y fue realizada dentro de un videojuego el cual se llama ROBLOX y esta actividad deja sacar toda tu creatividad e imaginación y en esta puedes realizar cualquier ilustración al tamaño que quieras y yo realice este godzilla porque es mi personaje favorito de la parte de monstruos.</p>
+        </div>
+    </section>
+
+    <section id="achurado" class="about">
+        <div class="about-text">
+            <h2>JEEP GRAND CHEROKEE</h2>
+            <p>Realice esta la ilustración de esta camioneta porque es el único vehículo que me gusta demasiado su diseño y poder por el cual realicé una ilustración en illustrator utilizando la pluma de distintos escalados</p>
+        </div>
+        <img src="Imagen/Cherokee.png" alt="Ilustración">
+    </section>
+
+    <section id="nueva-seccion" class="about">
+        <img src="Imagen/VIOLENCIA.png" alt="Violencia">
+        <div class="about-text">
+            <h2>SUÉLTAME</h2>
+            <p>La violencia sexual abarca actos en los que se utiliza la fuerza, intimidación o engaño para involucrar a alguien en actividades sexuales sin su consentimiento. Puede manifestarse de diversas formas, como acoso sexual, violación y explotación sexual. Esta violencia tiene graves consecuencias físicas y psicológicas para las víctimas, como trastorno de estrés postraumático y depresión, y puede afectar a personas de cualquier género y en cualquier entorno, como hogares, escuelas y lugares de trabajo.</p>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
